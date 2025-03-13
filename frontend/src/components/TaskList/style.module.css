@@ -1,0 +1,11 @@
+.taskContainer {
+	height: auto;
+	width: 100%;
+}
+
+.taskContainer .taskList {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	gap: 8px;
+}

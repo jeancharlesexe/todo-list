@@ -1,0 +1,8 @@
+:root{
+    /* Colors */
+    --primary-color: rgb(0, 153, 255);
+    --primary-color-darken: rgb(0, 138, 230);
+    /* Fonts */
+    --main-font: Arial, Helvetica, sans-serif;
+}
+

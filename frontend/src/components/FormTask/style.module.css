@@ -1,0 +1,32 @@
+.formTask{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.formTask .inputTask {
+	flex: 1;
+	height: 35px;
+	padding-left: 10px;
+	border: 1px solid rgb(165, 165, 165);
+}
+
+.formTask .inputTask:focus {
+	outline: none;
+	border-color: var(--primary-color);
+}
+
+.formTask .btnAdd {
+	width: 35px;
+	height: 35px;
+	background-color: var(--primary-color);
+	border: none;
+	border-color: rgb(104, 104, 104);
+	color: #FFF;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.formTask .btnAdd:hover {
+	background-color: var(--primary-color-darken);
+}
