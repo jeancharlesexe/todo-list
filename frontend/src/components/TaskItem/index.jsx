@@ -1,12 +1,21 @@
 import React from "react";
 import style from './style.module.css';
 
-export default function TaskItem() {
+import { useState } from "react";
+
+export default function TaskItem(props) {
+
+    const [isChecked, setIsChecked] = useState(props.isChecked);
+
+    const handleCheckbox = ()=>{
+        setIsChecked(!isChecked)
+    }
+
     return (
-    <div className={`${style.taskItem}`}>
+        <div className={`${style.taskItem} ${isChecked ? style.checked : ''}`}>
             <div className={style.taskInfo}>
-                <input type="checkbox"/>
-                <label for="">Treinar</label>
+                <input type="checkbox" checked={isChecked} onChange={handleCheckbox}/>
+                <label for="">{props.title}</label>
             </div>
             <div className={style.taskSettings}>
                 <button>

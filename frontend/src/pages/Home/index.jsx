@@ -13,7 +13,7 @@ function Home() {
       <Header/>
       <FormTask/>
       <TaskList>
-        <TaskItem/>
+        <TaskItem title="teste" isChecked={false}/>
       </TaskList>
       <Footer/>
     </main>

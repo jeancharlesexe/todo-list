@@ -36,10 +36,10 @@
 	background-color: rgb(240, 240, 240);
 }
 
-.taskDone {
+.checked {
 	opacity: 50%;
 }
 
-.taskDone label {
+.checked label {
 	text-decoration: line-through;
 }
